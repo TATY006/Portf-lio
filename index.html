@@ -52,13 +52,8 @@
       opacity: 0;
     }
 
-    section:nth-of-type(2) {
-      animation-delay: 0.3s;
-    }
-
-    section:nth-of-type(3) {
-      animation-delay: 0.6s;
-    }
+    section:nth-of-type(2) { animation-delay: 0.3s; }
+    section:nth-of-type(3) { animation-delay: 0.6s; }
 
     h2 {
       color: #66ccff;
@@ -152,29 +147,32 @@
       <ul>
         <li>Fundamentos de Python e Computação em Nuvem</li>
         <li>Conhecimentos em Ciências Contábeis</li>
-        <li>Alta capacidade de organização e aprendizado rápido</li>
+        <li>Capacidade de organização e aprendizagem rápida</li>
       </ul>
     </section>
 
     <section>
       <h2>🔗 Contatos</h2>
+      <p>Você pode entrar em contato comigo por:</p>
       <ul>
         <li><a href="https://www.instagram.com/_thaynaralyy?igsh=bmM4ZXMxcGtpeDN0" target="_blank" rel="noopener noreferrer">Instagram</a></li>
         <li><a href="https://www.linkedin.com/in/thaynarasilveira06" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="mailto:thaynara.silveira06@gmail.com">E-mail</a></li>
       </ul>
     </section>
   </main>
 
+  <footer>
+    <p>&copy; 2025 Thaynara Silveira. Todos os direitos reservados.</p>
+  </footer>
+
   <script>
-    // Saudação automática
+    // Saudação automática por horário
     const saudacao = document.getElementById("saudacao");
     const hora = new Date().getHours();
-    saudacao.textContent =
-      hora < 12 ? "Bom dia!" :
-      hora < 18 ? "Boa tarde!" :
-      "Boa noite!";
+    saudacao.textContent = hora < 12 ? "Bom dia!" : hora < 18 ? "Boa tarde!" : "Boa noite!";
 
-    // Scroll suave para futuras âncoras
+    // Scroll suave para âncoras
     document.querySelectorAll('a[href^="#"]').forEach(link => {
       link.addEventListener("click", e => {
         e.preventDefault();
